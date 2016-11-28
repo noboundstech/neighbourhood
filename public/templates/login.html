@@ -1,0 +1,12 @@
+<header ng-include="'templates/include/header.html'"></header>	
+<div class="modal-dialog">
+    <div class="loginmodal-container">
+        <h1 ng-bind="details"></h1><br>
+        <form ng-submit="loginUser();">
+            <span class="err" ng-bind="error"></span>
+            <input type="text" name="user" placeholder="Username" ng-model="login.username">
+            <input type="password" name="pass" placeholder="Password" ng-model="login.password">
+            <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+        </form>
+    </div>
+</div>
