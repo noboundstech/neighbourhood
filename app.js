@@ -59,7 +59,7 @@ app.use(express.static(path.join(__dirname, 'Neighborhood_friend')));
 
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-server.listen(3500, function () {
+server.listen(3000, function () {
   console.log('Example app listening on port 3500!');
 });
 
